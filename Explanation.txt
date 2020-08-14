@@ -1,0 +1,59 @@
+Given a NxN matrix mat and an integer K, return a matrix answer where each answer[i][j] is the sum of all elements 
+mat[r][c] for i - K <= r <= i + K, j - K <= c <= j + K, and (r, c) is a valid position in the matrix.
+
+Input Description:
+First line contains, N and K as integers.
+Second Line contains, N elements for matrix in a single line,
+
+Ouput Description:
+Print the result matrix.
+
+Sample Input:
+3 1
+1 2 3 4 5 6 7 8 9
+
+Sample Output:
+[12, 21, 16] [27, 45, 33] [24, 39, 28]
+
+Explanation:
+The given matrix is,
+1 2 3
+4 5 6
+7 8 9
+If we sum answer[i][j] is the sum of all elements 
+mat[r][c] for i - K <= r <= i + K, j - K <= c <= j + K, and (r, c), we will get the answer.
+
+Sample INput:
+2 2
+1 6 4 8
+
+Sample Output:
+[19, 19] [19, 19]
+
+Sample Input:
+2 4
+12 65 88 33
+
+Sample Output:
+[198, 198] [198, 198]
+
+Sample Input:
+3 1
+12 34 56 78 90 10 22 45 88
+
+Sample Output:
+[214, 280, 190] [281, 435, 323] [235, 333, 233]
+
+Sample Input:
+3 2
+1 2 3 4 5 6 7 8 9
+
+Sample Output:
+[45, 45, 45] [45, 45, 45] [45, 45, 45]
+
+Sample Input:
+4 1
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16
+
+Sample Output:
+[14, 24, 30, 22] [33, 54, 63, 45] [57, 90, 99, 69] [46, 72, 78, 54]
